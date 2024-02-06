@@ -20,13 +20,13 @@ export default function App() {
       <Box sx={{
         width:600,
         height:400,
-       outline:'5px double black',
+        outline:'5px double black',
         display:'flex',
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
         backgroundColor:'#99d98c',
-        boxShadow:' rgba(0, 0, 0, 5) 0px 3px 8px'
+        borderRadius:5
       }}>
         <Typography variant='h1'  gutterBottom>{count
         }</Typography>
@@ -34,7 +34,8 @@ export default function App() {
           <Button variant='contained' size="large" sx={{
             width:90,
             height:45,
-            fontSize:25
+            fontSize:25,
+            backgroundColor:'#232B2B'
           }}
           onClick={()=>{
             setcount(count+1)
@@ -45,6 +46,7 @@ export default function App() {
             width:90,
             height:45,
            fontSize:30,
+           backgroundColor:'#232B2B'
           }}
           onClick={()=>{
             if(count===0){
