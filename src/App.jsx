@@ -20,12 +20,13 @@ export default function App() {
       <Box sx={{
         width:600,
         height:400,
-        outline:5,
+       outline:'5px double black',
         display:'flex',
         flexDirection:'column',
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'#99d98c'
+        backgroundColor:'#99d98c',
+        boxShadow:' rgba(0, 0, 0, 5) 0px 3px 8px'
       }}>
         <Typography variant='h1'  gutterBottom>{count
         }</Typography>
